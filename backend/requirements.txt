@@ -1,16 +1,9 @@
-# Sindh Smart Crop Monitor — Python Backend Requirements
-fastapi==0.111.0
-uvicorn[standard]==0.30.1
-httpx==0.27.0
-python-multipart==0.0.9
-pydantic==2.7.4
-python-dotenv==1.0.1
-
-# Google Earth Engine (activate when credentials ready)
-earthengine-api==0.1.396
-
-# Image processing (for thumbnail generation)
-Pillow==11.2.1
-
-# Supabase Python client (optional convenience wrapper)
-supabase==2.5.0
+fastapi
+uvicorn[standard]
+httpx
+python-multipart
+pydantic
+python-dotenv
+earthengine-api
+Pillow
+supabase
