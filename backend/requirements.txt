@@ -10,7 +10,7 @@ python-dotenv==1.0.1
 earthengine-api==0.1.396
 
 # Image processing (for thumbnail generation)
-Pillow==10.3.0
+Pillow==11.2.1
 
 # Supabase Python client (optional convenience wrapper)
 supabase==2.5.0
