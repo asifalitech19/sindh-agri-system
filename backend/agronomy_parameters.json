@@ -1,0 +1,265 @@
+{
+  "version": "2.0",
+  "region": "Sindh, Pakistan",
+  "last_updated": "2025-07",
+  "crops": {
+    "wheat": {
+      "local_name": { "ur": "گندم", "sd": "ڪڻڪ" },
+      "variety_recommendations_sindh": ["TD-1", "Kiran-95", "Mehran-89", "Sarsabz"],
+      "growing_season": { "sowing": "Nov 1 – Nov 20", "harvest": "Mar 15 – Apr 10" },
+      "soil": {
+        "ideal_pH": [6.0, 7.5],
+        "texture": "Sandy loam to clay loam",
+        "EC_max_dS_per_m": 6.0
+      },
+      "water_requirements": {
+        "total_mm_per_season": [300, 450],
+        "irrigations": 4,
+        "critical_stages": ["Crown root initiation (25-30 DAS)", "Jointing (55-65 DAS)", "Heading (80-90 DAS)", "Grain filling (100-110 DAS)"]
+      },
+      "fertilizer_schedule": {
+        "basal": {
+          "DAP_46_0_0": { "kg_per_acre": 50, "timing": "At sowing" },
+          "Urea_46pct_N": { "kg_per_acre": 25, "timing": "At sowing" }
+        },
+        "top_dress": [
+          { "product": "Urea_46pct_N", "kg_per_acre": 50, "timing": "30 DAS (first irrigation)" },
+          { "product": "Urea_46pct_N", "kg_per_acre": 25, "timing": "60 DAS (third irrigation)" }
+        ],
+        "micronutrient": { "ZnSO4": { "kg_per_acre": 5, "timing": "Basal if deficient" } }
+      },
+      "diseases": [
+        {
+          "id": "wheat_yellow_rust",
+          "name": "Yellow Rust (Stripe Rust)",
+          "local_name": { "ur": "پیلا زنگ", "sd": "پيلو زنگ" },
+          "pathogen": "Puccinia striiformis f.sp. tritici",
+          "symptoms": "Yellow-orange pustules in stripes on leaves; white halo in early stage",
+          "favorable_conditions": "Cool temp 10-15°C, high humidity >85%",
+          "treatment": {
+            "chemical_1": { "product": "Propiconazole 25% EC (Tilt)", "dose": "250ml per acre in 100L water", "interval": "14 days", "preharvest_interval_days": 28 },
+            "chemical_2": { "product": "Tebuconazole 25% WP (Folicur)", "dose": "200g per acre in 100L water", "interval": "14 days", "preharvest_interval_days": 28 },
+            "chemical_3": { "product": "Triadimefon 25% WP (Bayleton)", "dose": "200g per acre in 100L water", "interval": "14 days" }
+          },
+          "cultural_control": "Use resistant varieties TD-1, Kiran-95; avoid late sowing"
+        },
+        {
+          "id": "wheat_loose_smut",
+          "name": "Loose Smut",
+          "local_name": { "ur": "کھلا کانگیاری", "sd": "کجهو ڪانگياري" },
+          "pathogen": "Ustilago tritici",
+          "symptoms": "Spikes replaced by black powder (spores) at heading stage",
+          "treatment": {
+            "chemical_1": { "product": "Carboxin+Thiram (Vitavax 200 FF)", "dose": "Seed treatment: 2.5ml per kg seed", "method": "Seed dressing before sowing" },
+            "chemical_2": { "product": "Tebuconazole 2% DS (Raxil)", "dose": "1.5g per kg seed", "method": "Seed treatment" }
+          }
+        },
+        {
+          "id": "wheat_aphid",
+          "name": "Wheat Aphid",
+          "local_name": { "ur": "تیلہ", "sd": "تيلهو" },
+          "pathogen": "Schizaphis graminum (insect)",
+          "symptoms": "Yellowing, leaf curl; honeydew on leaves; sooty mold",
+          "treatment": {
+            "chemical_1": { "product": "Imidacloprid 200SL (Confidor)", "dose": "250ml per acre in 100L water", "preharvest_interval_days": 21 },
+            "chemical_2": { "product": "Dimethoate 40EC (Rogor)", "dose": "300ml per acre in 100L water", "preharvest_interval_days": 21 },
+            "chemical_3": { "product": "Chlorpyrifos 40EC (Lorsban)", "dose": "500ml per acre in 100L water" }
+          }
+        }
+      ]
+    },
+    "cotton": {
+      "local_name": { "ur": "کپاس", "sd": "ڪپهه" },
+      "variety_recommendations_sindh": ["MNH-886", "CIM-600", "FH-142", "Sitara-008"],
+      "growing_season": { "sowing": "Apr 15 – May 31", "harvest": "Oct – Dec" },
+      "soil": {
+        "ideal_pH": [6.0, 7.5],
+        "texture": "Deep, well-drained sandy loam",
+        "EC_max_dS_per_m": 7.7,
+        "notes": "Very sensitive to waterlogging; avoid heavy clay soils"
+      },
+      "water_requirements": {
+        "total_mm_per_season": [700, 900],
+        "irrigations": 6,
+        "critical_stages": ["Germination (0-15 DAS)", "Square formation (45-55 DAS)", "Flowering (60-80 DAS)", "Boll development (80-110 DAS)"],
+        "sindh_notes": "Use canal water; avoid evening irrigation to prevent fungal diseases"
+      },
+      "fertilizer_schedule": {
+        "basal": {
+          "DAP_46_0_0": { "kg_per_acre": 25, "timing": "At sowing" },
+          "SOP_K2SO4": { "kg_per_acre": 25, "timing": "At sowing", "note": "Potassium critical for fiber quality" }
+        },
+        "top_dress": [
+          { "product": "Urea_46pct_N", "kg_per_acre": 35, "timing": "35 DAS" },
+          { "product": "Urea_46pct_N", "kg_per_acre": 35, "timing": "65 DAS (flowering)" },
+          { "product": "Urea_46pct_N", "kg_per_acre": 25, "timing": "90 DAS (boll development)" }
+        ],
+        "foliar": { "product": "Boric Acid", "dose": "1g/L water", "timing": "At flowering to improve boll set" }
+      },
+      "diseases": [
+        {
+          "id": "cotton_leaf_curl",
+          "name": "Cotton Leaf Curl Virus (CLCuD)",
+          "local_name": { "ur": "کپاس پتہ مروڑ", "sd": "ڪپهه پن موڙ" },
+          "pathogen": "Cotton leaf curl Kokhran virus (CLCuKoV) — transmitted by whitefly Bemisia tabaci",
+          "symptoms": "Upward/downward leaf curling; dark green thickened veins; enations (leaf-like outgrowths) on underside; plant stunting",
+          "severity": "CRITICAL — can cause 100% yield loss if early infection",
+          "treatment": {
+            "vector_control_1": { "product": "Imidacloprid 200SL (Confidor)", "dose": "200ml per acre in 100L water", "timing": "At first whitefly sighting; every 10 days", "note": "Target whitefly vector" },
+            "vector_control_2": { "product": "Acetamiprid 20SP (Mospilan)", "dose": "100g per acre", "timing": "Alternate with Imidacloprid to avoid resistance" },
+            "vector_control_3": { "product": "Spiromesifen 240SC (Oberon)", "dose": "250ml per acre", "note": "For imidacloprid-resistant whitefly populations" },
+            "systemic_1": { "product": "Thiamethoxam 25WG (Actara)", "dose": "80g per acre", "method": "Soil drench at transplant for systemic protection" }
+          },
+          "cultural_control": "Use CLCuD-tolerant varieties (MNH-886); uproot infected plants; remove weeds (alternate hosts); install yellow sticky traps (10 per acre)",
+          "biological_control": "Release Chrysoperla carnea larvae (lacewing) 10,000 per acre"
+        },
+        {
+          "id": "cotton_boll_worm",
+          "name": "Pink & American Bollworm",
+          "local_name": { "ur": "سنڈی", "sd": "سنڊي" },
+          "pathogen": "Pectinophora gossypiella (Pink) / Helicoverpa armigera (American)",
+          "symptoms": "Entry holes in bolls; stained/damaged lint; premature boll opening",
+          "treatment": {
+            "chemical_1": { "product": "Chlorpyrifos 40EC + Cypermethrin 10EC", "dose": "500ml + 200ml per acre in 100L water", "timing": "When 5-10% bolls are attacked" },
+            "chemical_2": { "product": "Emamectin Benzoate 1.9EC (Proclaim)", "dose": "300ml per acre", "note": "Highly effective for Helicoverpa" },
+            "chemical_3": { "product": "Spinosad 45SC (Tracer)", "dose": "80ml per acre", "note": "Low residue; suitable near harvest" }
+          },
+          "monitoring": "Install 5 pheromone traps per acre; spray at threshold of 5 moths/trap/week"
+        },
+        {
+          "id": "cotton_bacterial_blight",
+          "name": "Bacterial Blight (Black Arm)",
+          "local_name": { "ur": "جھلساؤ", "sd": "ٻرڻ روڳ" },
+          "pathogen": "Xanthomonas axonopodis pv. malvacearum",
+          "symptoms": "Angular water-soaked lesions on leaves turning brown; black cankers on stems",
+          "treatment": {
+            "chemical_1": { "product": "Copper Oxychloride 50WP (Kocide)", "dose": "500g per acre in 100L water", "interval": "10-14 days" },
+            "seed_treatment": { "product": "Streptocycline + Copper Oxychloride", "dose": "Mix 20ppm Streptocycline + 0.3% Cu-Oxychloride for seed soak 30 min" }
+          }
+        }
+      ]
+    },
+    "sugarcane": {
+      "local_name": { "ur": "گنا", "sd": "کمرڪ" },
+      "variety_recommendations_sindh": ["SPF-238", "Thatta-10", "HSF-240", "CP-43-33"],
+      "growing_season": { "planting": "Oct – Nov (Autumn) / Feb – Mar (Spring)", "harvest": "Nov – Apr (14-18 months)" },
+      "soil": {
+        "ideal_pH": [6.0, 7.5],
+        "texture": "Deep clay loam to loamy; good drainage essential",
+        "EC_max_dS_per_m": 1.7,
+        "notes": "Very sensitive to salinity; avoid saline soils common in lower Sindh"
+      },
+      "water_requirements": {
+        "total_mm_per_season": [1500, 2000],
+        "irrigations": 25,
+        "interval_days": 12,
+        "critical_stages": ["Germination (0-30 days)", "Grand growth phase (90-270 days)", "Ripening (last 60 days — reduce water)"],
+        "sindh_notes": "Furrow irrigation preferred; drip irrigation increases yield 20-30%"
+      },
+      "fertilizer_schedule": {
+        "basal": {
+          "DAP_46_0_0": { "kg_per_acre": 50, "timing": "At planting in furrow" },
+          "SOP_K2SO4": { "kg_per_acre": 50, "timing": "At planting" },
+          "FYM": { "tonnes_per_acre": 4, "timing": "2 weeks before planting" }
+        },
+        "top_dress": [
+          { "product": "Urea_46pct_N", "kg_per_acre": 50, "timing": "45 days after planting" },
+          { "product": "Urea_46pct_N", "kg_per_acre": 50, "timing": "90 days after planting" },
+          { "product": "Urea_46pct_N", "kg_per_acre": 50, "timing": "130 days after planting" }
+        ],
+        "total_NPK_per_acre": { "N_kg": 180, "P2O5_kg": 46, "K2O_kg": 50 }
+      },
+      "diseases": [
+        {
+          "id": "sugarcane_red_rot",
+          "name": "Red Rot",
+          "local_name": { "ur": "سرخ سڑن", "sd": "ڳاڙهو سڙڻ" },
+          "pathogen": "Colletotrichum falcatum",
+          "symptoms": "Red discoloration in internodes; white cross-patches alternating with red; sour smell; yellowing of top leaves",
+          "severity": "CRITICAL — major disease in Sindh mills",
+          "treatment": {
+            "seed_treatment_1": { "product": "Carbendazim 50WP (Bavistin)", "dose": "Soak setts in 0.1% solution (1g/L) for 30 minutes before planting" },
+            "seed_treatment_2": { "product": "Mancozeb 80WP (Dithane M-45)", "dose": "Soak setts in 0.3% solution for 30 minutes" },
+            "foliar_1": { "product": "Propiconazole 25EC (Tilt)", "dose": "200ml per acre in 100L water at grand growth phase", "interval": "21 days" }
+          },
+          "cultural_control": "Use resistant variety SPF-238; destroy infected ratoons; avoid waterlogging; 3-year crop rotation"
+        },
+        {
+          "id": "sugarcane_smut",
+          "name": "Smut (Whip Smut)",
+          "local_name": { "ur": "کانگیاری", "sd": "ڪانگياري" },
+          "pathogen": "Sporisorium scitamineum",
+          "symptoms": "Long whip-like black structure (smut sorus) from central shoot; infected plants thin and grassy",
+          "treatment": {
+            "seed_treatment": { "product": "Carboxin+Thiram (Vitavax 200)", "dose": "2g per liter water; soak setts 30 minutes" },
+            "hot_water_treatment": { "method": "Soak setts in hot water at 52°C for 30 minutes + Bavistin 0.05%", "note": "Gold standard treatment for smut in Sindh" }
+          },
+          "cultural_control": "Uproot infected plants immediately; plant only certified seed; use resistant varieties Thatta-10"
+        },
+        {
+          "id": "sugarcane_stem_borer",
+          "name": "Sugarcane Stem Borer",
+          "local_name": { "ur": "تنہ سنڈی", "sd": "ٿنگهه سنڊي" },
+          "pathogen": "Chilo infuscatellus / Sesamia inferens (insects)",
+          "symptoms": "Dead heart in early stage; shot holes in leaf whorls; bore holes in stalk; dried tillers",
+          "treatment": {
+            "chemical_1": { "product": "Carbofuran 3G (Furadan)", "dose": "8 kg per acre; place granules in whorls", "timing": "At grand growth phase" },
+            "chemical_2": { "product": "Chlorpyrifos 20EC", "dose": "1000ml per acre in 100L water; apply in whorls", "timing": "May-June at peak borer season" },
+            "biological": { "product": "Trichogramma chilonis", "dose": "Release 40,000 parasitised eggs per acre per week for 6 weeks", "source": "NARC Islamabad / CCRI Sakrand Sindh" }
+          }
+        }
+      ]
+    },
+    "rice": {
+      "local_name": { "ur": "چاول", "sd": "چانور" },
+      "variety_recommendations_sindh": ["Shua-92", "IR-6", "Super Basmati", "Shadab"],
+      "growing_season": { "nursery": "Jun 1 – Jun 20", "transplant": "Jul 1 – Jul 20", "harvest": "Oct 15 – Nov 15" },
+      "soil": {
+        "ideal_pH": [5.5, 6.5],
+        "texture": "Heavy clay; water retention critical",
+        "EC_max_dS_per_m": 3.0
+      },
+      "water_requirements": {
+        "total_mm_per_season": [900, 1200],
+        "flood_depth_cm": [5, 10],
+        "critical_stages": ["Transplanting", "Active tillering (15-30 DAT)", "Panicle initiation (45-55 DAT)", "Flowering (60-70 DAT)"]
+      },
+      "fertilizer_schedule": {
+        "basal": {
+          "DAP_46_0_0": { "kg_per_acre": 25, "timing": "At transplanting" }
+        },
+        "top_dress": [
+          { "product": "Urea_46pct_N", "kg_per_acre": 30, "timing": "15 DAT (active tillering)" },
+          { "product": "Urea_46pct_N", "kg_per_acre": 25, "timing": "45 DAT (panicle initiation)" }
+        ]
+      },
+      "diseases": [
+        {
+          "id": "rice_blast",
+          "name": "Rice Blast",
+          "local_name": { "ur": "بلاسٹ", "sd": "بلاسٽ" },
+          "pathogen": "Pyricularia oryzae",
+          "symptoms": "Diamond/spindle-shaped gray lesions with brown border on leaves; neck rot (most damaging); whitish empty panicles",
+          "treatment": {
+            "chemical_1": { "product": "Tricyclazole 75WP (Beam)", "dose": "200g per acre in 100L water", "interval": "10-14 days", "note": "Most effective against blast in Pakistan" },
+            "chemical_2": { "product": "Propiconazole 25EC (Tilt)", "dose": "250ml per acre at boot leaf stage preventively" },
+            "chemical_3": { "product": "Azoxystrobin 23SC (Amistar)", "dose": "200ml per acre", "note": "Systemic; very effective for neck blast" }
+          }
+        },
+        {
+          "id": "rice_bph",
+          "name": "Brown Plant Hopper (BPH)",
+          "local_name": { "ur": "بھورا تیلہ", "sd": "ڀورو تيلهو" },
+          "pathogen": "Nilaparvata lugens (insect)",
+          "symptoms": "Hopper burn (circular brown patches); plants dry up from base; honeydew at base",
+          "treatment": {
+            "chemical_1": { "product": "Imidacloprid 200SL (Confidor)", "dose": "250ml per acre in 100L water; direct at base", "preharvest_days": 21 },
+            "chemical_2": { "product": "Buprofezin 25WP (Applaud)", "dose": "400g per acre", "note": "IGR — disrupts BPH development" },
+            "chemical_3": { "product": "Thiamethoxam 25WG (Actara)", "dose": "100g per acre" }
+          },
+          "monitoring": "Economic threshold: 5-10 hoppers per hill; use sweep net"
+        }
+      ]
+    }
+  }
+}
